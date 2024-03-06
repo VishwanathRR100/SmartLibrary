@@ -1,0 +1,10 @@
+#table {
+    background-color: gainsboro;
+    width: 50vh;
+    position: relative;
+    left: 20%;
+}
+#number{
+    width: 100vw;
+    background-color: rgb(188, 169, 169);
+}
