@@ -1,15 +1,14 @@
 package main
 
 import (
-	"github.com/SakthiMahendran/SmartLibrary/dbdriver"
-	"github.com/SakthiMahendran/SmartLibrary/dbdriver/controller"
+	"fmt"
+
 	"github.com/SakthiMahendran/SmartLibrary/server"
 )
 
 func main() {
-	dbdriver.Nothing()
-	controller.Nothing()
-
+	fmt.Println("Starting server")
 	smartServer := server.NewServer()
-	smartServer.Start("8080")
+
+	fmt.Printf("smartServer.Start(\"8080\"): %v\n", smartServer.Start("8080").Error())
 }
